@@ -1,0 +1,17 @@
+# Ignore Data
+chest_xray/
+__MACOSX/
+
+# Ignore Models (Too big for free GitHub)
+*.keras
+*.h5
+saved_models/
+
+# Ignore System Junk
+.DS_Store
+__pycache__/
+*.pyc
+
+# Ignore Virtual Environments
+venv/
+env/
