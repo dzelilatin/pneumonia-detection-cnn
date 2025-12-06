@@ -14,6 +14,7 @@ Through data augmentation and regularization techniques (Dropout), we successful
 The training plots below demonstrate stable learning with validation accuracy closely tracking training accuracy, indicating good generalization.
 
 ![Accuracy Plot](results/accuracy_plot.png)
+
 *Figure 1: Training and validation accuracy/loss showing converged model.*
 
 ### Confusion Matrix
@@ -26,6 +27,7 @@ The model shows exceptionally low false negatives (missed cases), which is criti
 We implemented **Grad-CAM** (Gradient-weighted Class Activation Mapping) to provide weakly supervised localization. This verifies that the model is learning to identify lung texture anomalies and boundaries associated with pneumonia, rather than relying on background artifacts or tags.
 
 ![Heatmap](results/heatmap_explanation.jpg)
+
 *Figure 3: Grad-CAM heatmap superimposed on a chest X-ray. The red/yellow regions indicate where the model is focusing its attention to make the "Pneumonia" prediction.*
 
 ## 🚀 How to Run
