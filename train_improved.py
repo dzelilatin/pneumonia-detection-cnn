@@ -5,18 +5,16 @@ import numpy as np
 import os
 from sklearn.metrics import classification_report, confusion_matrix
 
-# --- FIX FOR PYLANCE ERROR ---
-# We define shortcuts here so the rest of the code works without changing
 layers = tf.keras.layers
 models = tf.keras.models
 callbacks = tf.keras.callbacks
 
 # --- CONFIGURATION ---
 BATCH_SIZE = 32
-IMG_HEIGHT = 180 # Adjust to match your images
+IMG_HEIGHT = 180 
 IMG_WIDTH = 180
 EPOCHS = 20      # We use Early Stopping, so we can set this high
-DATA_DIR = '/Users/user/Desktop/ml-project/chest_xray/train' # <--- CHANGE THIS
+DATA_DIR = '/Users/user/Desktop/ml-project/chest_xray/train' 
 
 # --- 1. LOAD DATA ---
 train_ds = tf.keras.utils.image_dataset_from_directory(
